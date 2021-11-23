@@ -1,0 +1,30 @@
+.alert {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.alert-box {
+  width: 300px;
+  min-height: 150px;
+  border-radius: 10px;
+  background-color: wheat;
+  box-shadow: 0 5px 100px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  transition: 1s;
+}
+
+.alert-img {
+  color: red;
+}
+
+.alert-msg {
+  color: #e24c4b;
+  font-size: 20px;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 500;
+}
