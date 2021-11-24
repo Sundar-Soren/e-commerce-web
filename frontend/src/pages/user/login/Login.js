@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import darkLogo from "../../../assets/dark-logo.png";
-
+import { login } from "../../../context/action/userAction";
 import "./login.css";
+
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  console.log(email, password);
+  const dispatch = useDispatch();
+  const handleSubmit = () => {
+    dispatch(login(email, password));
+  };
   return (
     <div className="login">
       <div className="container">
@@ -11,15 +21,17 @@ const Login = () => {
         <div>
           <input
             type="email"
-            autocomplete="off"
+            autoComplete="off"
             id="email"
             placeholder="email"
+            onChange={(e) => setEmail(e.target.value)}
           />
           <input
             type="password"
-            autocomplete="off"
+            autoComplete="off"
             id="password"
             placeholder="password"
+            onChange={(e) => setPassword(e.target.value)}
           />
           <input
             type="checkbox"
@@ -35,7 +47,9 @@ const Login = () => {
           <label for="notification">
             recieve upcoming offers and events mails
           </label>
-          <button className="submit-btn">create account</button>
+          <button className="submit-btn" onClick={handleSubmit}>
+            Log In
+          </button>
         </div>
         <Link to="/signup" className="link">
           I don't have an account? Signup in here

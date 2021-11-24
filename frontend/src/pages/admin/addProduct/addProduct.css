@@ -10,7 +10,7 @@
   margin: 0 auto 0px;
 }
 .form {
-  height: 90vh;
+  height: 70vh;
 }
 
 input,
@@ -148,6 +148,7 @@ input::-webkit-inner-spin-button {
 }
 
 .buttons {
+  margin: 2rem;
   text-align: center;
 }
 /*
@@ -197,4 +198,19 @@ input::-webkit-inner-spin-button {
   height: 100px;
   resize: none;
   padding: 10px 20px;
+}
+
+.category-select {
+  margin-top: 1rem;
+  width: 100%;
+  min-width: 15ch;
+  max-width: 30ch;
+  border: 1px solid var(--select-border);
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
 }

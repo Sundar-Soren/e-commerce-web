@@ -27,7 +27,6 @@ textarea {
   border: none;
   outline: none;
   margin: 20px 0;
-  text-transform: capitalize;
   color: #383838;
   font-size: 14px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
@@ -46,7 +45,6 @@ textarea {
   background: #383838;
   color: #fff;
   border-radius: 2px;
-  text-transform: capitalize;
   border: none;
   cursor: pointer;
   display: block;
@@ -90,7 +88,6 @@ textarea {
 }
 
 label {
-  text-transform: capitalize;
   display: inline-block;
   margin-bottom: 10px;
   font-size: 14px;
@@ -103,7 +100,6 @@ label a {
 
 .link {
   color: #383838;
-  text-transform: capitalize;
   text-align: center;
   display: block;
 }
