@@ -14,18 +14,10 @@ const productSchema = new mongoose.Schema(
       type: Number,
       required: [true, "Please Enter Product Price"],
     },
-    images: [
-      {
-        public_id: {
-          type: String,
-          required: true,
-        },
-        url: {
-          type: String,
-          required: true,
-        },
-      },
-    ],
+    image: {
+      type: String,
+      required: [true, "Please upload product pic"],
+    },
     category: {
       type: String,
       required: [true, "Select The Category"],

@@ -10,7 +10,7 @@
   margin: 0 auto 0px;
 }
 .form {
-  height: 70vh;
+  height: 60vh;
 }
 
 input,
@@ -174,11 +174,11 @@ input::-webkit-inner-spin-button {
   border-radius: 6px;
   outline: none;
   border: none;
-  margin: 0 1rem;
+  margin-right: 1rem;
   cursor: pointer;
 }
 .save-btn:first-child {
-  background-color: #383838;
+  background-color: #3f269b;
   color: white;
 }
 
@@ -213,4 +213,23 @@ input::-webkit-inner-spin-button {
   line-height: 1.1;
   background-color: #fff;
   background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+
+.image-upload-progress {
+  height: 1rem;
+  /* width: 100%; */
+  background-color: #1900ff;
+  margin-bottom: 1rem;
+}
+
+.wait-to-save {
+  padding: 0.5rem 2rem;
+  font-size: 1.4rem;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  margin-right: 1rem;
+  cursor: pointer;
+  background-color: #7d70ac;
+  color: white;
 }

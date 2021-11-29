@@ -1,0 +1,38 @@
+.listItem {
+  list-style: none;
+}
+
+.sideBar {
+  color: white;
+  width: 100%;
+  background-color: #1e6ea3;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.wrapper {
+  height: max-content;
+  width: 90%;
+  margin: 0 auto;
+}
+.menu {
+  width: 100%;
+  /* margin: 0.5rem 0px; */
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+h2 {
+  color: #f8e8e8;
+}
+
+.lists {
+  display: flex;
+}
+.listItem {
+  display: flex;
+  align-items: center;
+  padding: 5px 2px;
+  margin: 0.7rem 0px;
+  border-radius: 5px;
+  color: white;
+  /* background-color: #e50914; */
+}

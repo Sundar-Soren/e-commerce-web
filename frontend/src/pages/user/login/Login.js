@@ -9,7 +9,6 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  console.log(email, password);
   const dispatch = useDispatch();
   const handleSubmit = () => {
     dispatch(login(email, password));

@@ -5,6 +5,8 @@ import { loadUser } from "./context/action/userAction";
 // import Alert from "./components/alert/Alert";
 import Page4O4 from "./pages/4O4Page.js/4O4Page";
 import AddProduct from "./pages/admin/addProduct/AddProduct";
+import Dashboard from "./pages/admin/dashborad/Dashboard";
+import GetProduct from "./pages/admin/getProduct/GetProduct";
 import Home from "./pages/home/Home";
 import ProductDetails from "./pages/productDetails/ProductDetails";
 import SearchPage from "./pages/searchPage/SearchPage";
@@ -35,7 +37,9 @@ const App = () => {
         path="/login"
         element={!isAuthenticated ? <Login /> : <Navigate replace to="/" />}
       />
-      <Route exact path="/product/create" element={<AddProduct />} />
+      <Route exact path="/admin/product/create" element={<AddProduct />} />
+      <Route exact path="/admin/products" element={<GetProduct />} />
+      <Route exact path="/admin/dashboard" element={<Dashboard />} />
 
       {/* <Route exact path="/" element={<Alert />} /> */}
     </Routes>

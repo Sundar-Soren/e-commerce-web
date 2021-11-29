@@ -4,6 +4,7 @@ import logo from "../../assets/dark-logo.png";
 import {
   AccountCircleRounded,
   AddShoppingCartOutlined,
+  Dashboard,
 } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 
@@ -22,11 +23,14 @@ const NavbarUpper = () => {
               />
               <button className="search-btn">search</button>
             </div>
-            <Link to="/signup">
+            <Link to="/signup" title="signup">
               <AccountCircleRounded />
             </Link>
-            <Link to="/cart">
+            <Link to="/cart" title="cart">
               <AddShoppingCartOutlined />
+            </Link>
+            <Link to="/admin/dashboard" title="admin dashboard">
+              <Dashboard />
             </Link>
           </div>
         </div>
